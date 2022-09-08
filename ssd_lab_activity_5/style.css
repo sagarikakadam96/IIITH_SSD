@@ -1,0 +1,43 @@
+.innerdiv  {
+    top: 30%;
+    left: 40%;
+    position:fixed;
+    box-shadow: 5px;
+    border: solid black 2px;
+    border-radius: 25px;
+    box-shadow: 5px 10px;
+    padding: 30px 30px 30px 30px;
+    
+}
+#bod1{
+    background-color: chartreuse;
+}
+
+#bod2{
+    background-color: violet;
+    font-family: Arial;
+}
+
+
+input{
+    margin: 15px 15px 15px 15px;
+    
+}
+
+input:hover {
+    border-color: rgb(197, 38, 64);
+  }
+
+table,th, td,tr{
+    border: solid black 2px;
+    padding: 30px 30px 30px 30px;
+}
+#but1{
+    background-color: green;
+}
+#but2{
+    background-color: red;
+}
+#hed1{
+    background-color: cyan;
+}

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+    <script>
+        function addNewRow() {
+            var mainTable = document.getElementById("tab");
+            var row = mainTable.insertRow(0);
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var roll_no = document.getElementById("rol").value;
+            var student_name = document.getElementById("nam").value;
+            cell1.innerHTML = roll_no;
+            cell2.innerHTML = student_name;
+            document.getElementById("rol").value = "";
+            document.getElementById("nam").value = "";
+            mainTable.appendChild(row);
+        }
+        function deleteLastRow() {
+            
+            var mainTable = document.getElementById("tab");
+            var r = mainTable.rows.length;
+            mainTable.deleteRow(r-1);
+        }
+    </script>
+
+</head>
+
+<body id="bod2">
+    <input type="text" id="rol" name="nrol" placeholder="Roll No."><br>
+    <input type="text" id="nam" name="nnam" placeholder="Student Name"><br>
+
+
+    <table id="tab">
+        <tr id="hed1">
+            <th>Roll No.</th>
+            <th>Student Name</th>
+        </tr>
+
+    </table>
+    <button id="but1" onclick="addNewRow()">Add New</button>
+    <button id="but2" onclick="deleteLastRow()"> Delete Last Record</button>
+</body>
+
+</html>
