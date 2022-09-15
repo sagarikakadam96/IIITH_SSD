@@ -1,0 +1,60 @@
+<html>
+
+<head>
+    <title>LAB6</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="myScript.js"></script>
+    
+</head>
+
+<body id="mybody">
+    <div>
+        <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+        <h4>Team Form</h4>
+
+    <form onsubmit="showMessage(event)">
+        <label for="managername">Manager Name:</label>
+        <input type="text" id="managername" name="managername" required><br>
+        
+        <label for="email">Group Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="serveruname">Server Username:</label>
+        <input type="serveruname" id="serveruname" name="serveruname" required onkeyup="validate(event)">
+        <span id='error_serverusername'></span>
+        <br>
+
+        <label for="serverpasswd">Server Password:</label>
+        <input type="password" id="serverpasswd" name="serverpasswd" required ><br>
+
+        <label for="confirmpasswd">Confirm Password:
+        <input type="password" id="confirmpasswd" name="confirmpasswd" required onblur="blurFunction(event)">
+        <span id='error_confirm_passwd'></span>
+        </label>
+        <br>
+
+        <label for="teamlead">Team Lead</label>
+      <select name="teamlead" id="teamlead">
+        <option value="ABC">ABC</option>
+        <option value="DEF">DEF</option>
+        <option value="GHI">GHI</option>
+        <option value="JKL">JKL</option>
+      </select>
+<br>
+<!-- 
+<span style="border:1px">
+<h6>ABC</h6>
+<h6>ABC</h6>
+</span>
+<span style="border:1px">
+    hi
+</span> -->
+<br>
+
+        <input type="submit" >
+        
+      </form>
+    </div>
+</body>
+
+</html>
